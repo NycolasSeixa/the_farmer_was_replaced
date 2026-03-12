@@ -1,6 +1,4 @@
-from functions import pad
-
-padding = 13
+from functions import pad, ei_log
 plant_dict = {}
 
 entity_to_item = {
@@ -13,7 +11,6 @@ entity_to_item = {
 	Entities.Sunflower: Items.Power
 }
 
-
 for entity in entity_to_item:
 	item = entity_to_item[entity]
 
@@ -25,13 +22,4 @@ for entity in entity_to_item:
 	'Cost' : get_cost(entity)
 	}
 
-
-def ei_log():
-	quick_print(pad(['ENTITY','ITEM','UNLOCKS','AMMOUNT','COST'], padding))
-	for i in plant_dict:
-		atr = []
-		for j in plant_dict[i]:
-			atr.append(plant_dict[i][j])
-		quick_print(pad(atr,padding))
-
-ei_log()
+# ei_log(plant_dict)
