@@ -47,3 +47,12 @@ def cost(entity):
 		value = all_cost[item]
 		result += str(value) + ' ' + str(item)[6:]
 	return result
+	
+def pos_check(pos):
+	return [get_pos_x(), get_pos_y()] == pos
+	
+def x_check(pos):
+	return get_pos_x() == pos
+	
+def y_check(pos):
+	return get_pos_y() == pos

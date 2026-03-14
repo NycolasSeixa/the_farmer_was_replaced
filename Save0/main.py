@@ -1,13 +1,12 @@
 from entity_item_log import *
 from unlocks_log import *
-import hay, wood, carrot
+import hay, wood, carrot, pumpkin
 
 clear()
 ei_log(plant_dict)
-quick_print('')
 un_log(unlock_dict)
 
 while True:
-	pass
+	pumpkin.farm()
 	
 	
