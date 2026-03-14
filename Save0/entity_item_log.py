@@ -1,4 +1,4 @@
-from functions import pad, ei_log
+from functions import pad, ei_log, cost
 plant_dict = {}
 
 entity_to_item = {
@@ -19,7 +19,7 @@ for entity in entity_to_item:
 	'Item' : str(item)[6:],
 	'Unlock' : num_unlocked(entity),
 	'Ammount' : num_items(item),
-	'Cost' : get_cost(entity)
+	'Cost' : cost(entity)
 	}
 
 # ei_log(plant_dict)

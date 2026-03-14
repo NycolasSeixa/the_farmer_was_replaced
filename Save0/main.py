@@ -1,12 +1,13 @@
 from entity_item_log import *
-import hay, wood
+from unlocks_log import *
+import hay, wood, carrot
 
 clear()
+ei_log(plant_dict)
+quick_print('')
+un_log(unlock_dict)
 
 while True:
-	if (num_items(Items.Hay) - 1000) > num_items(Items.Wood):
-		wood.farm()
-	else:
-		hay.farm()
+	pass
 	
 	
